@@ -1,6 +1,5 @@
-pipeline {
-	agent none
-    stages {
+node {
+	stages {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean install'
